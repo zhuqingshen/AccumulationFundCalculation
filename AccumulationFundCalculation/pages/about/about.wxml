@@ -1,0 +1,28 @@
+<view>
+  <view class="location">
+    <image src="/images/定位.png"/>
+    <text>杭州市</text>
+  </view>
+
+  <swiper indicator-dots autoplay circular style="width: 100%;">
+    <swiper-item>
+      <image style="width: 100%;" mode="scaleToFill" src="/images/swiper/日落.jpg" />
+    </swiper-item>
+
+    <swiper-item>
+      <image style="width: 100%;" mode="scaleToFill" src="/images/swiper/西湖.jpg" />
+    </swiper-item>
+  </swiper>
+
+  <view class="grid-list">
+    <view class="grid-item" wx:for="{{array}}" wx:key="{{item.id}}" data-info="{{index}}">
+      <image src="{{item.icon}}"/>
+      <button style="width:750rpx;text-align: left;border: none;" data-index="{{item.id}}" bind:tap="dialog" plain>{{item.title}}</button>
+    </view>
+    <view class="grid-item"  bind:tap="">
+      <image src="/images/分享.png"/>
+      <button style="width:750rpx;text-align: left;border: none;" open-type="share" plain>分享出去</button>
+    </view>
+  </view>
+  
+</view>

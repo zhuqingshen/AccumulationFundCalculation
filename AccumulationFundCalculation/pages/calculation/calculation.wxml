@@ -1,0 +1,48 @@
+<view>
+  <view class="location">
+    <image src="/images/定位.png"/>
+    <text>杭州市</text>
+  </view>
+
+  <view class="my-cell-group-title">缴纳信息</view>
+
+  <view class="input-number">
+    <view class="input-line">
+      <view class="input-item1">实际缴纳月数:</view>
+      <view class="input-item2">
+        <input name="totalMonth" type="number" placeholder="请输入缴纳月数（单位：月）" bindblur="saveTotalMonth" value="{{totalMonth}}"/>
+      </view> 
+    </view>
+
+    <view class="input-line">
+      <view class="input-item1">上个月余额:</view>
+      <view class="input-item2">
+        <input name="lastMonthBalance" type="number" placeholder="请输入上月余额（单位：元）" bindblur="saveLastMonthBalance" value="{{lastMonthBalance}}"/>
+      </view>
+      <view class="input-item3">
+        <image class="iconfont" src="/images/question-circle-fill.png" bind:tap="onClickQuestion"/>
+      </view>
+    </view>
+
+    <view class="input-line">
+      <view class="input-item1">双边缴存总额:</view>
+      <view class="input-item2">
+        <input name="paymentAmount" type="number" placeholder="请输入缴存总额（单位：元）" bindblur="savePaymentAmount" value="{{paymentAmount}}"/>
+      </view>
+      <view class="input-item3">
+        <image class="iconfont" src="/images/{{showIndex?'up':'down'}}.png" catch:tap="onClickDown"/>
+      </view>
+    </view>
+
+    <view hidden="{{!showIndex}}">
+      <view class="detail" wx:for="{{array}}" wx:key="{{item.id}}">
+        <view style="margin-left: 20rpx;">{{item.content}}</view>
+        <input type="number" bindblur="inputMonthly" value="{{item.amount}}" data-index="{{item.id}}"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="buttonfont">
+    <button style="width: 100%; color: coral;"  bind:tap="onClickCalc">一键计算</button>
+  </view>
+</view>

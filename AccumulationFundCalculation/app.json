@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/calculation/calculation",
+    "pages/about/about"  
+  ],
+
+  "tabBar": {
+    "list": [
+    {
+      "pagePath": "pages/calculation/calculation",
+      "text": "计算",
+      "iconPath": "/images/calculator.png",
+      "selectedIconPath": "/images/calculator-fill.png"
+    },
+    {
+      "pagePath": "pages/about/about",
+      "text": "说明",
+      "iconPath": "/images/info.png",
+      "selectedIconPath": "/images/info-fill.png"
+    }
+  ]
+  },
+
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "公积金贷款额度计算器",
+    "navigationBarBackgroundColor": "#f5a77d",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

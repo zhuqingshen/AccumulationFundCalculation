@@ -1,0 +1,53 @@
+.about-content {
+  margin-top: 40rpx;
+}
+
+.grid-list {
+  flex-wrap: wrap;
+  border-bottom: 1rpx solid rgb(78, 73, 73);
+  border-top: 1rpx solid rgb(78, 73, 73);
+  border-right: 1rpx solid rgb(78, 73, 73);
+  border-left: 1rpx solid rgb(78, 73, 73);
+}
+
+.grid-item {
+  display: flex;
+  height: 80rpx;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1rpx solid #000;
+  border-top: 1rpx solid #000;
+}
+
+.grid-item image {
+  justify-content: center;
+  align-items: center;
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 30rpx;
+}
+
+.grid-item text {
+  justify-content: center;
+  margin-left: 10rpx;
+  align-items: center;
+  font-size: 36rpx;
+  margin-top: 10rpx;
+}
+
+.mt40 {
+	margin-top: 40rpx !important;
+}
+
+.center {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*去除微信按钮样式*/
+.shareBtn {
+  padding: 0;
+  border: none;
+  text-align: left;
+}

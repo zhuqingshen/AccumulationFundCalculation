@@ -1,0 +1,72 @@
+.number {
+  border-bottom: 2rpx solid #000;
+  border-top: 2rpx solid #000;
+  border-right: 2rpx solid #000;
+  border-left: 2rpx solid #000;
+}
+
+.cal {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.input-number input {
+  height: 80rpx;
+  align-items: center;
+}
+
+.input-item1 {
+  margin-left: 20rpx;
+  width: 230rpx;
+}
+
+.input-item2 {
+  width: 450rpx;
+}
+
+.input-item3 {
+  width: 50;
+}
+
+.input-line  {
+  height: 80rpx;
+  display: flex;
+  place-items: center;
+}
+ 
+.iconfont {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 40rpx;
+}
+
+.buttonfont {
+  border: 2px solid #f5a77d; 
+  border-radius: 2rpx;  
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.my-cell-group-title {
+  margin: 0;
+  font-weight: 800;
+  font-size: calc(14px + 0.5 * (1rem - 16px));
+  color: rgba(69,90,100,.6);
+  padding: 20rpx 30rpx 20rpx;
+}
+
+/* 展示所有余额 */
+.detail {
+  border-bottom: 1rpx solid rgb(73, 70, 70);
+  border-top: 1rpx solid #000;
+  border-right: 1rpx solid #000;
+  border-left: 1rpx solid #000;
+  height: 50rpx;
+  width: 100%;
+  background-color: bisque;
+  display: flex;
+  place-items: center;
+}
